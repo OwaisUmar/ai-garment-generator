@@ -1,0 +1,11 @@
+fastapi[standard]
+asyncpg
+psycopg2-binary
+sqlalchemy
+celery
+redis
+alembic
+openai
+
+nicegui
+webcolors

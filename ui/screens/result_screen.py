@@ -6,8 +6,6 @@ from nicegui import ui
 
 from config.settings import settings
 
-PUBLIC_API_URL = 'http://localhost:8000'
-
 def render_result_screen(container, image_info):
     image_details = image_info['generation_details']
     
@@ -23,7 +21,7 @@ def render_result_screen(container, image_info):
                         ui.html('<strong class="w-full justify-center mb-2 text-base block">Generated Image</strong>')
                         with ui.row().classes('w-full justify-center'):
                             image_url = (
-                                f'{PUBLIC_API_URL}/'
+                                f'{settings.PUBLIC_API_URL}/'
                                 f'{image_details["image_path"]}'
                             )
                             ui.image(image_url).classes(

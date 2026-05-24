@@ -9,6 +9,7 @@ services:
     environment:
       - POSTGRES_USER=devuser
       - POSTGRES_PASSWORD=dev_pass
+      - POSTGRES_DB=ai_garment_generator
     ports:
       - "5432:5432"
     volumes:
